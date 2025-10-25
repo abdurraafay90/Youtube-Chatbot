@@ -1,0 +1,21 @@
+# Core LLM and LangChain stack
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-openai>=0.2.0
+langchain-text-splitters>=0.3.0
+
+# Embedding & vector search
+faiss-cpu>=1.8.0
+
+# YouTube transcript fetching
+youtube-transcript-api>=1.2.3
+
+# Environment management
+python-dotenv>=1.0.1
+
+# Chainlit for the chat UI
+chainlit>=1.1.0
+
+# Utilities
+tiktoken>=0.7.0
+requests>=2.32.3
