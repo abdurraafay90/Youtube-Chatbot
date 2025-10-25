@@ -36,33 +36,23 @@ Simply paste a YouTube link, and the chatbot will fetch the transcript and let y
 ```bash
 git clone https://github.com/your-username/youtube-chatbot.git
 cd youtube-chatbot
+```
 
-
-2️⃣ Create a virtual environment
-python -m venv .venv
-
-
-Activate it:
-
-On Windows
-
-.venv\Scripts\activate
-
-
-On macOS/Linux
-
-source .venv/bin/activate
 
 3️⃣ Install dependencies
 🧩 Option 1 — Using pip
+```
 pip install -r requirements.txt
+```
 
 ⚡ Option 2 — Using uv (faster)
 
 If you have uv
  installed:
-
+ 
+```
 uv pip install -r requirements.txt
+```
 
 4️⃣ Set up your environment variables
 
@@ -72,11 +62,16 @@ OPENAI_API_KEY=your_openai_api_key_here
 
 5️⃣ Run the chatbot
 Using uv (recommended)
+
+```
 uv run chainlit run app.py
+```
 
 Or using Python directly
-chainlit run app.py
 
+```
+chainlit run app.py
+```
 
 Once the server starts, open the provided local URL in your browser — your YouTube Q&A Chatbot will be live! 🎉
 
