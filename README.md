@@ -29,3 +29,10 @@ Simply paste a YouTube link, and the chatbot will fetch the transcript and let y
 | Environment | `.env` for API keys |
 
 ---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/your-username/youtube-chatbot.git
+cd youtube-chatbot
