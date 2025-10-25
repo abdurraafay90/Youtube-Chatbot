@@ -36,3 +36,66 @@ Simply paste a YouTube link, and the chatbot will fetch the transcript and let y
 ```bash
 git clone https://github.com/your-username/youtube-chatbot.git
 cd youtube-chatbot
+
+
+2️⃣ Create a virtual environment
+python -m venv .venv
+
+
+Activate it:
+
+On Windows
+
+.venv\Scripts\activate
+
+
+On macOS/Linux
+
+source .venv/bin/activate
+
+3️⃣ Install dependencies
+🧩 Option 1 — Using pip
+pip install -r requirements.txt
+
+⚡ Option 2 — Using uv (faster)
+
+If you have uv
+ installed:
+
+uv pip install -r requirements.txt
+
+4️⃣ Set up your environment variables
+
+Create a .env file in your project root directory and add your OpenAI API key:
+
+OPENAI_API_KEY=your_openai_api_key_here
+
+5️⃣ Run the chatbot
+Using uv (recommended)
+uv run chainlit run app.py
+
+Or using Python directly
+chainlit run app.py
+
+
+Once the server starts, open the provided local URL in your browser — your YouTube Q&A Chatbot will be live! 🎉
+
+🧠 How It Works
+
+The app extracts the video ID from any YouTube link.
+
+It fetches the transcript using youtube-transcript-api.
+
+LangChain splits the transcript into smaller chunks for embedding.
+
+The chunks are stored locally in a FAISS vectorstore.
+
+When a question is asked, the app retrieves relevant chunks and uses OpenAI GPT to generate an answer.
+
+📜 License
+
+This project is licensed under the MIT License — feel free to use, modify, and distribute it with attribution.
+
+💡 Author
+
+Abdur Raafay
